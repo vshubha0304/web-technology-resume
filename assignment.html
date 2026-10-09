@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shubha V - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #007acc;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 10px;
+      border: 3px solid #2c3e50;
+    }
+    section {
+      background: white;
+      padding: 15px;
+      margin-bottom: 40px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    h2 {
+      color: #34495e;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <nav>
+      <a href="#home">Home</a> |
+      <a href="#resume">Resume</a> |
+      <a href="#biodata">Bio-data</a>
+    </nav>
+    <img src="profile.jpeg" alt="Profile Picture" class="profile-pic">
+  </header>
+
+  <!-- Home Page -->
+  <section id="home">
+    <h1>About Me</h1>
+    <p>Hello! I’m <strong>Shubha V</strong>, a 3rd-year Computer Science & Engineering student at RVITM, Bengaluru. 
+       I enjoy programming, working on academic projects, and learning new technologies.</p>
+  </section>
+
+  <!-- Resume Page -->
+  <section id="resume">
+    <h1>Resume</h1>
+    <h2>Objective</h2>
+    <p>Motivated 3rd-year Computer Science & Engineering student (5th Semester) with strong foundation in C, Python, Java, and web technologies.</p>
+
+    <h2>Education</h2>
+    <ul>
+      <li>B.E. in Computer Science & Engineering, RVITM, Bengaluru (CGPA: 8.59)</li>
+      <li>PUC (Science) – 93%</li>
+      <li>SSLC – 93%</li>
+    </ul>
+
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>C, Python, Java</li>
+      <li>HTML5, CSS</li>
+      <li>DSA, DBMS, ADA</li>
+    </ul>
+
+    <h2>Academic Projects</h2>
+    <ul>
+      <li>Smart CRM for Small Businesses – Web-based project with analytics dashboards.</li>
+      <li>Simple Task List Manager Using Python – Command-line utility for tasks.</li>
+      <li>Billing Queue Optimisation in Supermarkets – Console-based tool using Greedy Load Balancing.</li>
+    </ul>
+  </section>
+
+  <!-- Bio-data Page -->
+  <section id="biodata">
+    <h1>Bio-data</h1>
+    <h2>Personal Information</h2>
+    <p><strong>Name:</strong> Shubha V</p>
+    <p><strong>Date of Birth:</strong> (Add here)</p>
+    <p><strong>Gender:</strong> (Add here)</p>
+    <p><strong>Nationality:</strong> Indian</p>
+    <p><strong>Marital Status:</strong> Single</p>
+    <p><strong>Languages Known:</strong> English, Kannada, Hindi</p>
+
+    <h2>Contact Details</h2>
+    <p><strong>Email:</strong> rvit24bcs161.rvitm@rvei.edu.in</p>
+    <p><strong>Phone:</strong> +91-9380360487</p>
+    <p><strong>Address:</strong> Bengaluru, Karnataka</p>
+
+    <h2>Educational Background</h2>
+    <ul>
+      <li>B.E. in Computer Science & Engineering, RVITM, Bengaluru (CGPA: 8.59)</li>
+      <li>PUC (Science) – 93%</li>
+      <li>SSLC – 93%</li>
+    </ul>
+
+    <h2>Strengths</h2>
+    <ul>
+      <li>Quick learner and adaptable</li>
+      <li>Strong foundation in programming and algorithms</li>
+      <li>Good listening and teamwork skills</li>
+    </ul>
+
+    <h2>Declaration</h2>
+    <p>I hereby declare that the above information is true to the best of my knowledge and belief.</p>
+    <p><strong>Place:</strong> Bengaluru</p>
+    <p><strong>Date:</strong> (Add current date)</p>
+    <p><strong>Signature:</strong> ____________</p>
+  </section>
+
+  <script>
+    // Toggle visibility of content when clicking headings
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("h2").forEach(h2 => {
+        h2.addEventListener("click", () => {
+          const nextElement = h2.nextElementSibling;
+          if (nextElement) {
+            nextElement.classList.toggle("hidden");
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
